@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/bases.css" />
+    <link rel="stylesheet" href="./css/make-order.css" />
+
+    <title>Document</title>
+  </head>
+  <body style="margin-top: 140px">
+<a href="#order-box"></a>
+
+    <div class="order-box" id="order-box">
+      <div class="order-box-container">
+        <div class="order-header">
+          <ul class="order-header-item">
+            <li class="order-header-item-list">Зробити замовлення</li>
+            <li class="close-button close" data-dismiss="modal">x</li>
+          </ul>
+          <p>Форма замовлення</p>
+        </div>
+        <div class="order-form">
+          <form class="order-form-name" action="">
+            <div class="order-value-box">
+              <div class="order-value">
+                <label class="order-lable sum-order" for="linkByProduct"
+                  ><span>Замовлення 1</span></label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="linkByProduct"
+                  id="linkByProduct"
+                  placeholder="Вставте посилання на товар"
+                  value=""
+                />
+              </div>
+              <div class="order-value">
+                <label class="order-lable" for="price">Кількість</label>
+                <input
+                  class="form-control"
+                  type="number"
+                  name="amount"
+                  id="amount"
+                  placeholder=""
+                  value="1"
+                />
+              </div>
+
+              <div class="order-value">
+                <label class="order-lable" for="price">Вартість</label>
+                <input
+                  class="form-control"
+                  type="number"
+                  name="price"
+                  id="price"
+                  placeholder=""
+                  value="0"
+                />
+              </div>
+              <div class="order-value">
+                <label class="order-lable" for="delivery">Доставка</label>
+                <input
+                  class="form-control"
+                  type="number"
+                  name="delivery"
+                  id="delivery"
+                  placeholder=""
+                  value="0"
+                />
+              </div>
+              <div class="wrapper">
+                <p>Ціна в ZL</p>
+                <input class="turn-off" type="checkbox" name="" id="switch" />
+                <label class="turn-off-label" for="switch"></label>
+              </div>
+            </div>
+
+            <div class="order-checkbox">
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+              />
+              <p>
+                Товар б\у (комісія 15%, попередня оплата 100%, продавець повинен
+                мати варіант оплати PayU)
+              </p>
+            </div>
+            <div class="order-value-box">
+              <div class="order-value">
+                <label class="order-lable" for="comment"
+                  >Коментар до замовлення</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  placeholder="Опис"
+                />
+              </div>
+              <div class="chat-variant-box">
+                <p>Доставка по Україні: <span>Новою поштою</span></p>
+                <p>Зручний канал для зворотного зв'язку:</p>
+                <ul class="chat-variant">
+                  <li class="priority">
+                    <input
+                      type="checkbox"
+                      name="email-priority"
+                      id="email-priority"
+                    />
+                    <label for="email-priority ">Пошта</label>
+                  </li>
+                  <li class="priority">
+                    <input
+                      type="checkbox"
+                      name="viber-priority"
+                      id="viber-priority"
+                    />
+                    <label for="viber-priority ">Вайбер</label>
+                  </li>
+                  <li class="priority">
+                    <input
+                      type="checkbox"
+                      name="telegram-priority priority"
+                      id="telegram-priority"
+                    />
+                    <label for="telegram-priority">Телеграм</label>
+                  </li>
+                </ul>
+                <div class="sum-order">
+                  <p>Вартість позиції: <span>10485.00</span></p>
+                </div>
+              </div>
+              <div></div>
+              <div><button class="btn-del-order btn">_</button></div>
+            </div>
+            <div class="total-sum-order">
+              <p>Сума замовлення, грн <span>1234,56</span></p>
+            </div>
+          </form>
+          <form class="order-form-name" action="">
+            <div class="order-value-box">
+              <div class="order-value">
+                <label class="order-lable sum-order" for="linkByProduct"
+                  ><span>Замовлення 2</span></label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="linkByProduct"
+                  id="linkByProduct"
+                  placeholder="Вставте посилання на товар"
+                  value=""
+                />
+              </div>
+              <div class="order-value">
+                <label class="order-lable" for="price">Кількість</label>
+                <input
+                  class="form-control"
+                  type="number"
+                  name="amount"
+                  id="amount"
+                  placeholder=""
+                  value="1"
+                />
+              </div>
+
+              <div class="order-value">
+                <label class="order-lable" for="price">Вартість</label>
+                <input
+                  class="form-control"
+                  type="number"
+                  name="price"
+                  id="price"
+                  placeholder=""
+                  value="0"
+                />
+              </div>
+              <div class="order-value">
+                <label class="order-lable" for="delivery">Доставка</label>
+                <input
+                  class="form-control"
+                  type="number"
+                  name="delivery"
+                  id="delivery"
+                  placeholder=""
+                  value="0"
+                />
+              </div>
+              <div class="wrapper">
+                <p>Ціна в ZL</p>
+                <input class="turn-off" type="checkbox" name="" id="switch1" />
+                <label class="turn-off-label" for="switch1"></label>
+              </div>
+            </div>
+
+            <div class="order-checkbox">
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+              />
+              <p>
+                Товар б\у (комісія 15%, попередня оплата 100%, продавець повинен
+                мати варіант оплати PayU)
+              </p>
+            </div>
+            <div class="order-value-box">
+              <div class="order-value">
+                <label class="order-lable" for="comment"
+                  >Коментар до замовлення</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  placeholder="Опис"
+                />
+              </div>
+              <div class="chat-variant-box">
+                <p>Доставка по Україні: <span>Новою поштою</span></p>
+                <p>Зручний канал для зворотного зв'язку:</p>
+                <ul class="chat-variant">
+                  <li class="priority">
+                    <input
+                      type="checkbox"
+                      name="email-priority"
+                      id="email-priority"
+                    />
+                    <label for="email-priority ">Пошта</label>
+                  </li>
+                  <li class="priority">
+                    <input
+                      type="checkbox"
+                      name="viber-priority"
+                      id="viber-priority"
+                    />
+                    <label for="viber-priority ">Вайбер</label>
+                  </li>
+                  <li class="priority">
+                    <input
+                      type="checkbox"
+                      name="telegram-priority priority"
+                      id="telegram-priority"
+                    />
+                    <label for="telegram-priority">Телеграм</label>
+                  </li>
+                </ul>
+                <div class="sum-order">
+                  <p>Вартість позиції: <span>10485.00</span></p>
+                </div>
+              </div>
+              <div></div>
+              <div><button class="btn-add-order btn">+</button></div>
+            </div>
+          </form>
+          <form class="client-info-box" action="">
+            <div class="client-info-box-header">
+              <h4>Дані замовника</h4>
+            </div>
+            <div class="client-info">
+              <div>
+                <label class="surname" for="surname">Прізвище та ім'я</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="surname"
+                  id="surname"
+                />
+              </div>
+
+              <div>
+                <label class="phone-number" for="phone-number"
+                  >Номер телефону</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                />
+              </div>
+
+              <div>
+                <label class="phone-number" for="phone-number2"
+                  >Номер телефону</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="phone-number2"
+                  id="phone-number2"
+                />
+              </div>
+
+              <div>
+                <label class="email" for="email">e-mail</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+            </div>
+            <div class="comment-checkbox">
+              <label class="comment-cl-info" for="comment-cl-info"
+                >Коментар до замовлення</label
+              >
+              <input
+                class="form-control"
+                type="text"
+                name="comment-cl-info"
+                id="comment-cl-info"
+              />
+              <div>
+                <div class="agree-checkbox-box">
+                  <input type="checkbox" name="tel-me" id="tel-me" />
+                  <label class="agree-checkbox" for="tel-me"
+                    >Не телефонуйте мені, я підтверджую замовлення</label
+                  >
+                </div>
+                <div class="agree-checkbox-box">
+                  <input type="checkbox" name="agree" id="agree" />
+                  <label class="agree-checkbox" for="agree"
+                    >Я погоджуюсь та приймаю комерційні умови покупки та
+                    доставки</label
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="order-btn-box">
+
+            <button class="order-button btn">Надіслати</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+:root {
+  --contrast-text-color: #FFFFFF;
+  --titles-text-color: #2D2D2D;
+  --button-click: #ad0909;
+  --bg-color: #2f303a;
+  --akcent-text-color: #EA0C0C;
+  --footer-bg-color: #1E2122;
+  --hero-btn-color: #EA0C0C;
+  --overlay-color: rgba(33, 150, 243, 0.9);
+  --placeholder-color: rgba(45, 45, 45, 0.6);
+  --main-font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  --timing-func: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+button{
+  border: none;
+}
+button:focus{
+  border: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul,
+ol,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+a,
+b {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 250ms var(--timing-func);
+  transition: color 250ms var(--timing-func);
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--title-text-color);
+  background: #ebeceed9;
+}
+
+body.overflow {
+  
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+
+}
+/*# sourceMappingURL=bases.css.map */
+.main-container{
+  max-width: 1258px;
+  height: auto;
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0 20px;
+}
