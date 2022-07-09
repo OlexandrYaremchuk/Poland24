@@ -193,4 +193,76 @@
 }
 .anjoy-filter li span {
   margin-left: 8px;
+}
+
+.shop-page-hero {
+  display: flex;
+  margin: 67px 0;
+}
+.shop-page-hero img {
+  width: 635px;
+  height: 525px;
+}
+.shop-page-hero .shop-page-text-blok {
+  margin-left: 64px;
+}
+.shop-page-hero .shop-page-text-blok p {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+  /* black text/Н */
+  color: #2d2d2d;
+}
+.shop-page-hero .shop-page-text-blok .calc-input {
+  margin: 48px 0;
+}
+.shop-page-hero .shop-page-text-blok .calc-price-box {
+  display: flex;
+}
+.shop-page-hero .shop-page-text-blok .calc-price-box p {
+  margin-right: 16px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.shop-page-hero .shop-page-text-blok .calc-price-box p span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  padding-left: 16px;
+}
+
+.calc-box h4 {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+  /* black text/Н */
+  color: #2d2d2d;
+  margin-bottom: 16px;
+}
+.calc-box .checkbox-text {
+  margin-top: 20px;
+}
+.calc-box .about-shop {
+  margin-top: 48px;
+}
+.calc-box .about-shop p {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(45, 45, 45, 0.9);
 }/*# sourceMappingURL=main.css.map */

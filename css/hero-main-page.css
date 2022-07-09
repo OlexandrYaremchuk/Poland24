@@ -64,6 +64,7 @@
   width: 114px;
   height: 43px;
   margin-right: 0px;
+  margin-left: 10px;
 }
 .input-order-button:hover,
 .header-order:hover {
@@ -346,6 +347,7 @@ color: #FFFFFF;
 
 }
 .catalog-line{
+  
 	font-family: var(--main-font-family);
 	font-style: normal;
 	font-weight: 800;

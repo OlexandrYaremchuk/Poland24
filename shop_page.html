@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!------ Include the above in your HEAD tag ---------->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/bases.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/hero-main-page.css" />
+	<link rel="stylesheet" href="./css/carousel.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/modal.css">
+	<link rel="stylesheet" href="./css/make-order.css" />
+	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" href="/css/main.css">
+
+	<title>Poland24</title>
+
+</head>
+
+<body class="overflow">
+	<section class="header ">
+		<div class="header-top-box">
+			<a href="/main.html">
+				<img class="heder-logo" src="./images/Polygon Logo.png" alt="" />
+			</a>
+			
+			<div class="contacts">
+				<ul class="massage-list">
+					<p>Наші месенджери</p>
+					<li class="massage-icon">
+						<img src="./images/telegram_icon-icons.com_72055.png" alt="" />
+					</li>
+					<li class="massage-icon">
+						<img src="./images/viber_14147.png" alt="" />
+					</li>
+				</ul>
+			</div>
+			<a class="popup-link" href="#order-box">
+				<button class="header-order popup-link btn" href="#order-box">Оформити замовлення</button>
+			</a>
+			<a class="logIn" href="" data-toggle="modal" data-target="#squarespaceModal">Вхід</a>
+			<a class="signIn" href="" data-toggle="modal" data-target="#exampleModal">Реєстрація </a>
+
+
+
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle btn-lang" type="button" data-toggle="dropdown">Укр
+					<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Українською</a></li>
+					<li><a href="#">by English</a></li>
+				</ul>
+			</div>
+
+
+
+		</div>
+
+		<div class="header-bottom-box header-top-box">
+			<ul class="header-bottom-box-list">
+				<li class="header-bottom-box-list-item">
+					<a href="">Про нас</a>
+				</li>
+				<li class="header-bottom-box-list-item">
+					<a href="">Магазини</a>
+				</li>
+				<li class="header-bottom-box-list-item">
+					<a href="">Відгуки</a>
+				</li>
+				<li class="header-bottom-box-list-item">
+					<a href="">Питання - відповідь</a>
+				</li>
+				<li class="header-bottom-box-list-item">
+					<a href="">Калькулятор</a>
+				</li>
+				<li class="header-bottom-box-list-item">
+					<a href="">Контакти</a>
+				</li>
+				<li id="button-help">
+					<a href="">Допомога в пошуку товару</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="shop-page-hero-container main-container">
+		<div class="shop-page-hero">
+			<img src="./images/🖥 iMac.png" alt="">
+			<div class="shop-page-text-blok">
+				<h3 class="main-text how-this-work-main-text">Amazon</h3>
+				<p class="about-shop">Amazon - магазин з великим вибором товарів. Bringer UA <br> здійснює доставку товарів
+					з Amazon в Україну
+					по <br> вигідним тарифам </p>
+				<div class="input-order-box calc-input">
+					<input class=" form-control input-order" id="usr" type="link" placeholder="Вставте посилання на товар"
+						style="height: 42px;">
+					<button class="input-order-button header-order btn">Замовити</button>
+				</div>
+				<div class="calc-box">
+					<h4>Розрахуй вартість доставки товарів з Польщі</h4>
+					<div class="input-order-box">
+						<input class=" form-control input-order" id="calc-price" type="link" placeholder="Ціна товару, zl"
+							style="height: 42px;">
+						<button class="input-order-button header-order btn">Розрахувати</button>
+					</div>
+					<div class="calc-price-box">
+						<p>Сума, zl <span class="calc-price-zl">1234,56</span></p>
+						<p>Сума, гр <span class="calc-price-grn">1234,56</span></p>
+					</div>
+					<label class="checkbox-text">
+						<input class="halka" type="checkbox">
+						<p style="color: #2D2D2D;">На товар (новий або б/в) не виставляється фактура VAT <br>
+							(додаємо 15% комісії)</p>
+					</label>
+				</div>
+				<div class="about-shop">
+					<p>Німецький магазин в асортименті якого понад 50 000 товарів - починаючи від побутової електроніки
+						, таких як ноутбук, планшет та ТВ закінчуюючи побутовою технікою як пральна машина та холодильник.
+						Садове обладнання Karcher та газонокосарки. Асортимент включає все аж до іграшок для самих маленьких.
+						Продукція на будь-який гаманець від відомих виробників, таких, як Apple, ASUS, Intel, Samsung,
+						Canon, Microsoft, Bosh та ін.
+					</p>
+					<div class="price_delivery">
+						<p>Доставка: <span class="bold-text">до 7 днів</span></p>
+						<p>Комісія: <span class="bold-text">0,68%</span></p>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<div class="instruction-box">
+			<div class="instruction-box-header how-this-work-main-text">
+				<h3 class="main-text">Як це працює</h3>
+				<p>Інструкція доставки з Польщі</p>
+			</div>
+			<ul class="delivery_instr_list">
+				<li class="delivery_instr_list_item">
+					<p class="instr_list_item_number">01</p>
+					<div class="instr_text_box">
+						<h5 class="instr_text_box_main">Вибирайте товар на сайті магазину</h5>
+						<p class="instr_text_box_secondary">Своєю країною на сайті магазину</p>
+					</div>
+				</li>
+				<li class="delivery_instr_list_item">
+					<p class="instr_list_item_number">02</p>
+					<div class="instr_text_box">
+						<h5 class="instr_text_box_main">Оформлення замовлення у нас на сайті</h5>
+						<p class="instr_text_box_secondary">При реєстрації майжу всі магазини надсилають електроний лист
+							для підтвердження адреси електронної пошти, а також переглядайте СПАМ!
+						</p>
+						<p class="instr_text_box_secondary">
+							Оплата картою, криптовалютою або через SWIFT.
+						</p>
+
+					</div>
+				</li>
+				<li class="delivery_instr_list_item">
+					<p class="instr_list_item_number">03</p>
+					<div class="instr_text_box">
+						<h5 class="instr_text_box_main">Робите мінімальну предоплату 30% через платіжну систему PayU</h5>
+						<p class="instr_text_box_secondary">(Vorkasse/Vorauskasse - це предоплата банківським платежем. Для
+							оплати PayPal читайте розділ пам'ятка</p>
+
+					</div>
+				</li>
+				<li class="delivery_instr_list_item">
+					<p class="instr_list_item_number">04</p>
+					<div class="instr_text_box">
+						<h5 class="instr_text_box_main">Наша компанія викупляє товар протягом години після внесення Вами
+							предоплати</h5>
+						<p class="instr_text_box_secondary">По запиту обєднуємо посилки з кількох замовлень та розрухуємо
+							вартість доставки</p>
+
+					</div>
+				</li>
+				<li class="delivery_instr_list_item">
+					<p class="instr_list_item_number">05</p>
+					<div class="instr_text_box">
+						<h5 class="instr_text_box_main">Приймаємо ваше замовлення на склад в Польщі від продавця і готові до
+							відправки в Україну</h5>
+						<p class="instr_text_box_secondary">По запиту обєднуємо посилки з кількох замовлень та розрухуємо
+							вартість доставки</p>
+
+					</div>
+				</li>
+				<li class="delivery_instr_list_item">
+					<p class="instr_list_item_number">06</p>
+					<div class="instr_text_box">
+						<h5 class="instr_text_box_main">Доставка товару на склад в Україні</h5>
+						<p class="instr_text_box_secondary">#4В2 заповнюємо митну декларацію</p>
+
+					</div>
+				</li>
+				<li class="delivery_instr_list_item">
+					<p class="instr_list_item_number">07</p>
+					<div class="instr_text_box">
+						<h5 class="instr_text_box_main">Оплата залишку по замовленні</h5>
+					</div>
+				</li>
+				<li class="delivery_instr_list_item">
+					<p class="instr_list_item_number">08</p>
+					<div class="instr_text_box">
+						<h5 class="instr_text_box_main">Отримання замовлення</h5>
+					</div>
+				</li>
+
+
+
+			</ul>
+		</div>
+
+	</section>
+	<section class="catalog">
+		<div class="catalog-navigation box-size">
+			<h1 class="catalog-line">Каталог магазинів</h1>
+			<!-- Left and right controls -->
+			<a class="pagination-left" href="#demo" data-slide="prev">
+				<svg class="pagination-left-icon" width="30" height="20">
+					<use href="./images/icomoon/symbol-defs.svg#icon-arrow-left"></use>
+				</svg>
+			</a>
+			<p style="
+				 margin: 0 16px;
+				 font-size: 16px;
+				 font-family: var(hero-main-text);
+			  ">
+				1/5
+			</p>
+			<a class="pagination-left carousel-btn" href="#demo" data-slide="next">
+				<svg class="pagination-left-icon" width="30" height="20">
+					<use href="./images/icomoon/symbol-defs.svg#icon-arrow-right"></use>
+				</svg>
+			</a>
+			<a class="all-shops-button about-as-btn" href="./shopsCatalog.html">всі магазини</a>
+		</div>
+
+		<div class="container">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<!-- The slideshow -->
+				<div class="carousel-inner no-padding my-5">
+					<div class="carousel-item active ">
+
+						<div class="feedback-slider-container">
+							<div class="">
+
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="feedback-slider-container">
+							<div class="">
+
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="carousel-item">
+						<div class="feedback-slider-container">
+							<div class="">
+
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+	
+	
+	
+							<div class="">
+	
+								<a href="#" onclick="abc(this)" class="slider_info">
+									<img class="img_feedback" src="./images/review.png" />
+								</a>
+							</div>
+
+						</div>
+						
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		</div>
+
+	</section>
+
+	<section class="footer ">
+		<div class="footer-container box-size main-container">
+			<ul class="footer-logo">
+				<li><img src="./images/Polygon Logo-footer.png" alt=""></li>
+				<li class="footer-secondary-text">Copyright © 2022 Poland24.com.ua. <br>Olexandr Yaremchuk</li>
+			</ul>
+			<ul class="footer-navigation">
+				<h1 class="footer-main-text">Навігація</h1>
+				<li class="footer-navigation">
+					<a class="footer-secondary-text" href="" style="color: #fff ;"> Про компанію</a>
+				</li>
+				<li class="footer-navigation">
+					<a class="footer-secondary-text" href="" style="color: #fff ;"> Доставка з магазинів Європи</a>
+				</li>
+				<li class="footer-navigation">
+					<a class="footer-secondary-text" href="" style="color: #fff ;">Список магазинів</a>
+				</li>
+				<li class="footer-navigation">
+					<a class="footer-secondary-text" href="" style="color: #fff ;">Відгуки</a>
+				</li>
+			</ul>
+			<ul class="social">
+				<li class="footer-main-text">Ми в соц. мережах:</li>
+				<li class="social-icon">
+					<a class="" href="">
+						<img style="width: 32px; height:32px" src="./images/facebook_icon-icons.com_59205.png" alt="">
+					</a>
+					<a class="" href="">
+						<img style="width: 32px; height:32px" src="./images/linkedin_icon-icons.com_66096.png" alt="">
+					</a>
+					<a class="" href="">
+						<img style="width: 32px; height:32px" src="./images/1491580635-yumminkysocialmedia26_83102.png"
+							alt="">
+					</a>
+
+				</li>
+
+			</ul>
+			<ul class="footer-contact">
+				<h1 class="footer-main-text">Контакти</h1>
+				<li class="footer-contact-list">
+					<svg class="footer-contact-icon" width="25" height="25">
+						<use href="./images/icomoon/symbol-defs.svg#icon-location2"></use>
+					</svg>
+					<p class="footer-secondary-text">Україна, Київ, вул. Набережна 1</p>
+				</li>
+				<li class="footer-contact-list">
+					<svg class="footer-contact-icon" width="20" height="20">
+						<use href="./images/icomoon/symbol-defs.svg#icon-clock"></use>
+					</svg>
+					<p class="footer-secondary-text">Працюємо з 10:00 до 19:00</p>
+				</li>
+				<li class="footer-contact-list">
+					<svg class="footer-contact-icon" width="20" height="20">
+						<use href="./images/icomoon/symbol-defs.svg#icon-phone"></use>
+					</svg>
+					<p class="footer-contact-number footer-secondary-text">+38 (093) 496 58 00</p>
+				</li>
+				<li class="footer-contact-list">
+					<svg class="footer-contact-icon" width="20" height="20">
+						<use href="./images/icomoon/symbol-defs.svg#icon-envelop"></use>
+					</svg>
+					<p>info@poland.com.ua</p>
+				</li>
+			</ul>
+
+
+
+
+		</div>
+
+	</section>
+
+	<!-- LOGIN MODAL--------------------- -->
+
+	<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-main-text">Вхід</h1>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="modal-close" aria-hidden="true" style="color: #ea0c0c">×</span><span
+							class="sr-only">Close</span>
+					</button>
+				</div>
+				<div>
+					<p class="modal-secondary-text">Ще не маєте облікового запису? <a href="" data-toggle="modal"
+							data-target="#squarespaceModal"">Зареєструйтесь</a></p>
+		<div class=" signIn-btn-box">
+							<a href="https://www.google.com/intl/uk/gmail/about/">
+								<button class="signIn-btn-gl btn"><img src="./images/google.png" alt=""> Google</button>
+							</a>
+							<a href="https://www.facebook.com/">
+								<button class="signIn-btn-fb btn"><img src="./images/facebook.png" alt=""> Facebook</button>
+							</a>
+				</div>
+			</div>
+			<div class="modal-body">
+				<!-- content goes here -->
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1"></label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введіть e-mail * " />
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1"></label>
+						<input type="password" class="form-control" id="exampleInputPassword1"
+							placeholder="Введіть пароль *" />
+					</div>
+					<div class="checkbox-modal">
+						<label class=" checkbox-modal checkbox-alain"> <input class="point  checkbox-lable" type="checkbox" />
+							Запамятати мене <a class=" mamory-password " href="">Забули пароль?</a></label>
+
+					</div>
+					<button class="enter btn" type="submit" class="btn btn-default">Ввійти</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- ---------------------------------------- -->
+	<!-- SIGNIN MODAL----------------------------- -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content-sigIn modal-content">
+				<div class="modal-header">
+					<h1 class="modal-main-text modal-main-text-signIn">Реєстрація</h1>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="modal-close" aria-hidden="true" style="color: #ea0c0c">×</span><span
+							class="sr-only">Close</span>
+					</button>
+				</div>
+				<div>
+					<p class="modal-secondary-text">Вже маєте обліковий запис?<a href="">Увійдіть</a></p>
+					<div class="signIn-btn-box">
+						<a href="https://www.google.com/intl/uk/gmail/about/">
+							<button class="signIn-btn-gl btn"><img src="./images/google.png" alt=""> Google</button>
+
+						</a>
+						<a href="https://www.facebook.com/">
+							<button class="signIn-btn-fb btn"><img src="./images/facebook.png" alt=""> Facebook</button>
+
+						</a>
+					</div>
+				</div>
+				<div class="modal-body">
+					<!-- content goes here -->
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmailSgIn"></label>
+							<input type="text" class="form-control" id="exampleInputEmailSgIn"
+								placeholder="Ім'я та прізвище * " />
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmailSgIn"></label>
+							<input type="email" class="form-control" id="exampleInputEmailSgIn"
+								placeholder="E-mail / Логін * " />
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmailSgIn"></label>
+							<input type="number" class="form-control" id="exampleInputEmailSgIn"
+								placeholder="Номер телефону * " />
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPasswordSgIn"></label>
+							<input type="password" class="form-control" id="exampleInputPasswordSgIn"
+								placeholder="Введіть пароль *" />
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPasswordSgIn"></label>
+							<input type="password" class="form-control" id="exampleInputPasswordSgIn"
+								placeholder="Повторіть пароль *" />
+						</div>
+						<div class="checkbox-modal">
+							<label class=" checkbox-modal checkbox-alain"> <input class="point  checkbox-lable"
+									type="checkbox" /> Згоден з публічною угодою надання послуг </label>
+
+						</div>
+						<button class="enter btn" type="submit" class="btn btn-default">Реєстрація</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ------------------------------------ -->
+	<!-- MAKE-ORDER-MODAL -->
+	<div class="order-modal" id="order-box">
+		<div class="order-box">
+			<div class="order-box-container">
+				<div class="order-header">
+					<ul class="order-header-item">
+						<li class="order-header-item-list">Зробити замовлення</li>
+						<li class="close-button close" data-dismiss="modal">
+							<a class="close-popup" href="#">
+
+								<button type="button" class="close btn" data-dismiss="modal">
+									<span class="modal-close" aria-hidden="true" style="color: #ea0c0c">×</span><span
+										class="sr-only">Close</span>
+								</button>
+
+							</a>
+
+						</li>
+					</ul>
+					<p>Форма замовлення</p>
+				</div>
+				<div class="order-form">
+					<form class="order-form-name" action="">
+						<div class="order-value-box">
+							<div class="order-value">
+								<label class="order-lable sum-order" for="linkByProduct"><span>Замовлення 1</span></label>
+								<input class="form-control" type="text" name="linkByProduct" id="linkByProduct"
+									placeholder="Вставте посилання на товар" value="" />
+							</div>
+							<div class="order-value">
+								<label class="order-lable" for="price">Кількість</label>
+								<input class="form-control" type="number" name="amount" id="amount" placeholder="" value="1" />
+							</div>
+
+							<div class="order-value">
+								<label class="order-lable" for="price">Вартість</label>
+								<input class="form-control" type="number" name="price" id="price" placeholder="" value="0" />
+							</div>
+							<div class="order-value">
+								<label class="order-lable" for="delivery">Доставка</label>
+								<input class="form-control" type="number" name="delivery" id="delivery" placeholder=""
+									value="0" />
+							</div>
+							<div class="wrapper">
+								<p>Ціна в ZL</p>
+								<input class="turn-off" type="checkbox" name="" id="switch" />
+								<label class="turn-off-label" for="switch"></label>
+							</div>
+						</div>
+
+						<div class="order-checkbox">
+							<input type="checkbox" aria-label="Checkbox for following text input" />
+							<p>
+								Товар б\у (комісія 15%, попередня оплата 100%, продавець повинен
+								мати варіант оплати PayU)
+							</p>
+						</div>
+						<div class="order-value-box">
+							<div class="order-value">
+								<label class="order-lable" for="comment">Коментар до замовлення</label>
+								<input class="form-control" type="text" name="comment" id="comment" placeholder="Опис" />
+							</div>
+							<div class="chat-variant-box">
+								<p>Доставка по Україні: <span>Новою поштою</span></p>
+								<p>Зручний канал для зворотного зв'язку:</p>
+								<ul class="chat-variant">
+									<li class="priority">
+										<input type="checkbox" name="email-priority" id="email-priority" />
+										<label for="email-priority ">Пошта</label>
+									</li>
+									<li class="priority">
+										<input type="checkbox" name="viber-priority" id="viber-priority" />
+										<label for="viber-priority ">Вайбер</label>
+									</li>
+									<li class="priority">
+										<input type="checkbox" name="telegram-priority priority" id="telegram-priority" />
+										<label for="telegram-priority">Телеграм</label>
+									</li>
+								</ul>
+								<div class="sum-order">
+									<p>Вартість позиції: <span>10485.00</span></p>
+								</div>
+							</div>
+							<div></div>
+							<div><button class="btn-del-order btn">_</button></div>
+						</div>
+						<div class="total-sum-order">
+							<p>Сума замовлення, грн <span>1234,56</span></p>
+						</div>
+					</form>
+					<form class="order-form-name" action="">
+						<div class="order-value-box">
+							<div class="order-value">
+								<label class="order-lable sum-order" for="linkByProduct"><span>Замовлення 2</span></label>
+								<input class="form-control" type="text" name="linkByProduct" id="linkByProduct"
+									placeholder="Вставте посилання на товар" value="" />
+							</div>
+							<div class="order-value">
+								<label class="order-lable" for="price">Кількість</label>
+								<input class="form-control" type="number" name="amount" id="amount" placeholder="" value="1" />
+							</div>
+
+							<div class="order-value">
+								<label class="order-lable" for="price">Вартість</label>
+								<input class="form-control" type="number" name="price" id="price" placeholder="" value="0" />
+							</div>
+							<div class="order-value">
+								<label class="order-lable" for="delivery">Доставка</label>
+								<input class="form-control" type="number" name="delivery" id="delivery" placeholder=""
+									value="0" />
+							</div>
+							<div class="wrapper">
+								<p>Ціна в ZL</p>
+								<input class="turn-off" type="checkbox" name="" id="switch1" />
+								<label class="turn-off-label" for="switch1"></label>
+							</div>
+						</div>
+
+						<div class="order-checkbox">
+							<input type="checkbox" aria-label="Checkbox for following text input" />
+							<p>
+								Товар б\у (комісія 15%, попередня оплата 100%, продавець повинен
+								мати варіант оплати PayU)
+							</p>
+						</div>
+						<div class="order-value-box">
+							<div class="order-value">
+								<label class="order-lable" for="comment">Коментар до замовлення</label>
+								<input class="form-control" type="text" name="comment" id="comment" placeholder="Опис" />
+							</div>
+							<div class="chat-variant-box">
+								<p>Доставка по Україні: <span>Новою поштою</span></p>
+								<p>Зручний канал для зворотного зв'язку:</p>
+								<ul class="chat-variant">
+									<li class="priority">
+										<input type="checkbox" name="email-priority" id="email-priority" />
+										<label for="email-priority ">Пошта</label>
+									</li>
+									<li class="priority">
+										<input type="checkbox" name="viber-priority" id="viber-priority" />
+										<label for="viber-priority ">Вайбер</label>
+									</li>
+									<li class="priority">
+										<input type="checkbox" name="telegram-priority priority" id="telegram-priority" />
+										<label for="telegram-priority">Телеграм</label>
+									</li>
+								</ul>
+								<div class="sum-order">
+									<p>Вартість позиції: <span>10485.00</span></p>
+								</div>
+							</div>
+							<div></div>
+							<div><button class="btn-add-order btn">+</button></div>
+						</div>
+					</form>
+					<form class="client-info-box" action="">
+						<div class="client-info-box-header">
+							<h4>Дані замовника</h4>
+						</div>
+						<div class="client-info">
+							<div>
+								<label class="surname" for="surname">Прізвище та ім'я</label>
+								<input class="form-control" type="text" name="surname" id="surname" />
+							</div>
+
+							<div>
+								<label class="phone-number" for="phone-number">Номер телефону</label>
+								<input class="form-control" type="text" name="phone-number" id="phone-number" />
+							</div>
+
+							<div>
+								<label class="phone-number" for="phone-number2">Номер телефону</label>
+								<input class="form-control" type="text" name="phone-number2" id="phone-number2" />
+							</div>
+
+							<div>
+								<label class="email" for="email">e-mail</label>
+								<input class="form-control" type="email" name="email" id="email" />
+							</div>
+						</div>
+						<div class="comment-checkbox">
+							<label class="comment-cl-info" for="comment-cl-info">Коментар до замовлення</label>
+							<input class="form-control" type="text" name="comment-cl-info" id="comment-cl-info" />
+							<div>
+								<div class="agree-checkbox-box">
+									<input type="checkbox" name="tel-me" id="tel-me" />
+									<label class="agree-checkbox" for="tel-me">Не телефонуйте мені, я підтверджую
+										замовлення</label>
+								</div>
+								<div class="agree-checkbox-box">
+									<input type="checkbox" name="agree" id="agree" />
+									<label class="agree-checkbox" for="agree">Я погоджуюсь та приймаю комерційні умови покупки та
+										доставки</label>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="order-btn-box">
+
+						<button class="order-button btn">Надіслати</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<!-- END-MAKE-ORDER-MODAL -->
+
+
+
+</body>
+
+</html>

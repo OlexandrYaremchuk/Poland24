@@ -6,7 +6,7 @@ a:hover{
   color: var(--hero-btn-color);
 }
 .header {
-  width: 1920px;
+  width: 100%;
   background-color: #fff;
   padding: 8px 0;
 }
