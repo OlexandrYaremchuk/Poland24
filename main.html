@@ -822,14 +822,16 @@ aria-hidden="true"
 				  </div>
 				  <div class="order-value">
 					 <label class="order-lable" for="delivery">Доставка</label>
-					 <input
-						class="form-control"
-						type="number"
-						name="delivery"
-						id="delivery"
-						placeholder=""
-						value="0"
-					 />
+					
+					 <select name="delivery" id="delivery" class="form-control">
+						<option data-price="0" value="" selected disabled>select</option>
+						<option data-price="90" value="Italia">Italia</option>
+						<option data-price="30" value="Poland">Poland</option>
+						<option data-price="40" value="Bulgaria">Bulgaria</option>
+						<option data-price="100" value="France">France</option>
+						<option data-price="120" value="Turkey">Turkey</option>
+						<option data-price="130" value="Spain">Spain</option>
+					 </select>
 				  </div>
 				  <div class="wrapper">
 					 <p>Ціна в ZL</p>
@@ -1101,24 +1103,11 @@ aria-hidden="true"
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
 <!-- END-MAKE-ORDER-MODAL -->
-<script>
-console.log("Це LOG")
-	console.info("Це INFO")
-	console.warn("Це Попередження")
-	console.error("Це Помилка")
+<script src="./js/order.js" type="module"></script>
 
-</script>
+
+
 
 </body>
 
